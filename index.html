@@ -15,6 +15,9 @@
       <input type="text" placeholder="enter city name" class="search-input">
       <button class="search-btn"><img src="./images/search.png" alt=""></button>
     </div>
+    <div class="error">
+      <p>Invalid city name</p>
+    </div>
 
     <div class="weather">
       <img src="./images/rain.png" alt="current weather image" class="weather-icon">
@@ -39,47 +42,7 @@
     </div>
   </div>
   </div>
-
-  <script>
-    const API_KEY = "7957607fd230db06daf8ce971379d37e";
-    const apiURL = "https://api.openweathermap.org/data/2.5/weather?"
-
-    const temperature = document.querySelector(".temp")
-    const cityName = document.querySelector(".city")
-    const wind = document.querySelector(".wind")
-    const humidity = document.querySelector(".humidity")
-
-
-    const inputSearch = document.querySelector(".search-input")
-    const searchBtn = document.querySelector(".search-btn")
-
-
-    async function fetchData(city) {
-
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&limit=10&appid=${API_KEY}`)
-      const data = await response.json()
-      console.log(data)
-
-      temperature.textContent = Math.round((data.main.temp - 273.15).toFixed(1)) + "°c"
-      cityName.textContent = data.name
-      humidity.textContent = (data.main.humidity + "%")
-      wind.textContent = (data.wind.speed + "km/h")
-
-
-
-
-    }
-
-    searchBtn.addEventListener("click", () => {
-      const city = inputSearch.value
-      fetchData(city)
-    })
-
-
-
-
-  </script>
-
+  <script src="./script.js"></script>
 </body>
 
 </html>
