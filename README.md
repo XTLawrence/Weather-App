@@ -3,6 +3,11 @@
 
 A simple weather app that allows users to check the current weather conditions of any city using the OpenWeatherMap API. The app displays essential weather information including temperature, humidity, wind speed, and an appropriate weather icon.
 
+## Live visit
+```bash
+https://xtlawrence.github.io/Weather-App/
+```
+
 ## Features
 
 - **Search functionality**: Users can search for weather by entering a city name.
