@@ -4,45 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>weather app 2</title>
+  <link rel="stylesheet" href="./style2.css">
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="card">
-      <div class="search">
-        <input type="text" class="search-bar" placeholder="enter city name" spellcheck="false">
-
-        <button class="search-btn"><img src="./images/search.png" alt="search icon"></button>
-      </div>
-
-      <div class="weather">
-        <img src="images/rain.png" alt="" class="weather-icon">
-        <h1 class="temp">22°C</h1>
-        <h2 class="city">Ahmedabad</h2>
-        <div class="details">
-          <div class="col">
-            <img src="images/humidity.png" alt="">
-            <div>
-              <p class="humidity">50%</p>
-              <p>Humidity</p>
-            </div>
-          </div>
-          <div class="col">
-            <img src="images/wind.png" alt="">
-            <div>
-              <p class="wind">15 km/hr</p>
-              <p>wind speed</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
+  <div class="card">
+    <div class="search">
+      <input type="text" placeholder="enter city name" class="search-input">
+      <button class="search-btn"><img src="./images/search.png" alt=""></button>
     </div>
 
-    <script src="./script.js"></script>
+    <div class="weather">
+      <img src="./images/rain.png" alt="current weather image" class="weather-icon">
+      <h1 class="temp">22°C</h1>
+      <h2 class="city">Ahmedabad</h2>
+      <div class="details">
+        <div class="col">
+          <img src="./images/humidity.png" alt="">
+          <div class="extra-details">
+            <h3>50%</h3>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images/wind.png" alt="">
+          <div class="extra-details">
+            <h3>15 km/h</h3>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    const API_KEY = "7957607fd230db06daf8ce971379d37e";
+    const URL = "http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}"
+
+  </script>
 
 </body>
 
