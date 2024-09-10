@@ -21,7 +21,7 @@ A simple weather app that allows users to check the current weather conditions o
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/weather-app.git
+    git clone https://github.com/XTLawrence/weather-app.git
     ```
 
 2. Navigate to the project directory:
@@ -39,7 +39,7 @@ A simple weather app that allows users to check the current weather conditions o
 
 ## API Key
 
-To use this app, you'll need an API key from OpenWeatherMap. Replace the placeholder API key in `script.js` with your own API key.
+To use this app, use the API key from OpenWeatherMap.
 
 ```javascript
-const API_KEY = "your_api_key_here";
+const API_KEY = "7957607fd230db06daf8ce971379d37e";
